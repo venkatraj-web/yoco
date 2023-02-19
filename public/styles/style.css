@@ -1,0 +1,574 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+- Primary: #12C9E3
+- Tints:
+
+- Shades: #10b5cc
+
+- Accents:
+- Greys
+#575E63
+#7C7F94
+
+--- 05 SHADOWS
+Light - 0px 0px 20px rgba(0, 0, 0, 0.07);
+Medium - 0px 0px 50px rgba(0, 0, 0, 0.07);
+
+
+--- 06 BORDER-RADIUS
+Default: 9px
+Medium: 15px
+High: 30px
+--- 07 WHITESPACE
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/****************************************/
+/* HERO SECTION */
+/****************************************/
+.section-hero {
+	position: relative;
+	max-width: 200rem;
+	height: 90vh;
+}
+
+.hero-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -100;
+}
+
+.hero-text-box {
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translate(-50%, -10%);
+	text-align: center;
+	z-index: 1;
+}
+
+.hero-description {
+	font-size: 2rem;
+	line-height: 1.5;
+	margin-bottom: 4.8rem;
+}
+
+/****************************************/
+/* CAPABILITIES SECTION */
+/****************************************/
+
+.capabilities-section {
+	padding: 3.2rem 0;
+	background: url("../assets/capabilities-bg-pattern.svg"),
+		linear-gradient(360deg, #ffffff 0%, #fafafa 100%);
+	background-repeat: no-repeat;
+	background-size: contain;
+	backdrop-filter: blur(20px);
+}
+
+.capabilities-header {
+	text-align: center;
+	margin-bottom: 4.8rem;
+}
+
+.capabilities-main {
+	gap: 3.2rem;
+	margin-bottom: 4.8rem;
+}
+
+.capabilities-card {
+	text-align: center;
+	padding: 1.6rem 3.2rem;
+	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.07);
+	border-radius: 30px;
+	background-color: #fff;
+}
+
+.capabilities-card figure {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 3.2rem;
+}
+
+.capabilities-img {
+	width: 10rem;
+	height: 10rem;
+}
+
+.capabilities-title {
+	font-size: 2.4rem;
+	font-weight: 500;
+	color: #000;
+	margin-bottom: 0.8rem;
+}
+
+.capabilities-summary {
+	font-size: 1.6rem;
+	color: #575e63;
+	line-height: 1.4;
+}
+
+.capabilities-footer {
+	text-align: center;
+}
+
+/****************************************/
+/* SEGMENTS SECTION */
+/****************************************/
+.segments-section {
+	padding: 3.2rem 0;
+}
+.segments {
+	max-width: 150rem;
+}
+
+.segments-header {
+	text-align: center;
+	margin-bottom: 4.8rem;
+}
+
+.segments-main {
+	margin-bottom: 4.8rem;
+	gap: 4.8rem;
+}
+
+.segments-card {
+	display: flex;
+	gap: 1.6rem;
+}
+
+.segments-text-box {
+	margin-top: 7.2rem;
+}
+
+.segments-img {
+	height: 25rem;
+}
+
+.segments-text-box h4 {
+	color: #03b9d5;
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-bottom: 0.4rem;
+}
+
+.segments-summary {
+	font-size: 1.4rem;
+	line-height: 1.4;
+}
+
+.segments-footer {
+	text-align: center;
+}
+
+.segments-footer p {
+	color: #12c9e3;
+	font-size: 2.4rem;
+	font-weight: 600;
+	margin-bottom: 0.8rem;
+}
+
+/****************************************/
+/* CHALLENGES & SOLUTIONS SECTION */
+/****************************************/
+
+/****************************************/
+/* CHALLENGES SECTION */
+/****************************************/
+
+.challenges-solutions-header {
+	position: relative;
+}
+.challenges-solutions-img {
+	width: 100%;
+}
+
+.challenges-solutions-banner-text {
+	font-size: 3.6rem;
+	font-weight: 700;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.challenges-section {
+	background-color: #f3fffe;
+	padding: 3.2rem 0;
+}
+
+.challenges {
+	max-width: 140rem;
+}
+
+.challenges-heading {
+	font-size: 2.4rem;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 4.8rem;
+}
+
+.challenges-card-box {
+	gap: 3.2rem;
+}
+
+.challenges-card {
+	padding: 2.4rem;
+	line-height: 1.4;
+	background-color: #fff;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+}
+
+.challenges-title {
+	font-size: 1.6rem;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-bottom: 0.8rem;
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+}
+
+.challenges-summary {
+	font-size: 1.4rem;
+	color: #7c7f94;
+}
+
+/****************************************/
+/* SOLUTIONS SECTION */
+/****************************************/
+.solutions-section {
+	padding: 3.2rem 0;
+}
+.solutions {
+	max-width: 140rem;
+	gap: 1.6rem;
+	margin-bottom: 4.8rem;
+}
+
+.solutions-img {
+}
+.solutions-text-box {
+	line-height: 1.4;
+}
+.solutions-heading {
+	font-size: 3rem;
+	font-weight: 500;
+	line-height: 1.1;
+	color: #12c9e3;
+	margin-bottom: 1.2rem;
+}
+
+.solutions-description {
+	font-size: 1.6rem;
+	color: #7c7f94;
+	margin-bottom: 1.6rem;
+}
+
+.solutions-card-box {
+	gap: 1.6rem;
+	padding: 0;
+}
+
+.solutions-card {
+	padding: 1.6rem;
+	box-shadow: 2px 2px 15px rgba(136, 242, 233, 0.3);
+	border: 2px solid #12c9e3;
+	border-radius: 30px;
+}
+
+.solutions-title {
+	font-size: 1.6rem;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-bottom: 0.4rem;
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+}
+.solutions-summary {
+	font-size: 1.4rem;
+	margin-bottom: 0;
+	color: #7c7f94;
+}
+.solutions-footer {
+	text-align: center;
+}
+.solutions-footer p {
+	font-size: 2.4rem;
+	font-weight: 600;
+	color: #12c9e3;
+	margin-bottom: 0.8rem;
+}
+
+/****************************************/
+/* APPLICATION SECTION */
+/****************************************/
+.application-section {
+	padding: 12.8rem 0;
+	background: linear-gradient(360deg, #ffffff 0%, #f3fffe 100%);
+	backdrop-filter: blur(20px);
+}
+.application {
+	gap: 3.2rem;
+}
+.application-list {
+	list-style: none;
+	font-size: 3.6rem;
+	font-weight: 600;
+	margin-bottom: 3.2rem;
+}
+.application-list-item {
+	display: flex;
+	gap: 0.8rem;
+	align-items: center;
+	margin-bottom: 1.6rem;
+}
+.application-list-item:last-of-type {
+	margin-bottom: 0;
+}
+.application-colored-text {
+	color: #12c9e3;
+}
+.application-description {
+	font-size: 1.6rem;
+	color: #575e63;
+	line-height: 1.4;
+	margin-left: 3.2rem;
+	margin-bottom: 1.6rem;
+}
+.application-description:last-of-type {
+	margin-bottom: 0;
+}
+.application-img-box {
+	position: relative;
+	background-image: url(../assets/patterns/round-pattern.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.application-img {
+	width: 100%;
+	object-fit: cover;
+	cursor: pointer;
+	transition: all 300ms ease-in-out;
+}
+.application-img:hover {
+	transform: scale(1.7) translateX(100px);
+}
+.application-img-pattern {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+/****************************************/
+/* TESTIMONIALS SECTION */
+/****************************************/
+.testimonials-header {
+	font-size: 3rem;
+	font-weight: 600;
+	background: linear-gradient(266.91deg, #d3ffd5 0%, #3adeff 77.57%);
+	color: #fff;
+	padding: 6.4rem 3.2rem;
+}
+.testimonials-main {
+	position: relative;
+	padding: 9.6rem;
+}
+.testimonials {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 12.8rem;
+}
+.testimonials-text-box {
+	display: flex;
+	align-items: center;
+	padding: 3.2rem 3.2rem;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.5);
+	z-index: 100;
+	position: relative;
+}
+.testimonial-glitter-1 {
+	position: absolute;
+	top: 25%;
+	right: 0px;
+	transform: translate(0, -25%);
+}
+.testimonials-text {
+	font-weight: 600;
+	font-size: 4rem;
+	background: linear-gradient(90deg, #12c9e3 -8.23%, #006a8d 108.43%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+.testimonials-card {
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	margin-left: 4.8rem;
+	position: relative;
+}
+.testimonials-card-header {
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+	padding: 1.6rem;
+	border-bottom: 2px solid #f7f7f7;
+}
+.testimonial-author-designation {
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: #12c9e3;
+	margin-bottom: 0.4rem;
+}
+.testimonial-author-name {
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: #7c7f94;
+	margin-bottom: 0.8rem;
+}
+.testimonials-star-container {
+	display: flex;
+	gap: 10px;
+}
+.testimonials-star-container .star.rated svg path {
+	fill: #ffc700;
+}
+.testimonial-content {
+	font-size: 1.6rem;
+	line-height: 1.5;
+	padding: 2rem;
+}
+.testimonials-left-arrow {
+	position: absolute;
+	top: 50%;
+	left: -20px;
+	transform: translate(-20px, -50%);
+}
+.testimonials-right-arrow {
+	position: absolute;
+	top: 50%;
+	right: -20px;
+	transform: translate(20px, -50%);
+}
+.testimonials-dots-container {
+	display: flex;
+	gap: 1.6rem;
+	position: absolute;
+	left: 50%;
+	bottom: -20px;
+	transform: translate(-50%, 20px);
+}
+.testimonials-dot {
+	width: 10px;
+	height: 10px;
+	background-color: #e1e1e0;
+	border-radius: 50%;
+}
+.active-dot {
+	background-color: #006a8d;
+}
+.testimonials-pattern-left {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0, -50%);
+	z-index: -100;
+}
+.testimonials-pattern-right {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(0, -50%);
+	z-index: -100;
+}
+
+/****************************************/
+/* CONTACT SECTION */
+/****************************************/
+.contact-section {
+	padding: 0;
+	gap: 0;
+}
+.contact--1 {
+	position: relative;
+	background-image: url(../assets/contact.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 2.4rem 4.8rem;
+	display: flex;
+	justify-content: end;
+	align-items: end;
+}
+.contact--1-text {
+	font-size: 3.5rem;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 1.6rem;
+}
+.btn--brochure:link,
+.btn--brochure:visited {
+	background-color: #232526;
+	color: #fff;
+	border: 2px solid #232526;
+	transition: all 300ms;
+}
+.btn--brochure:link:hover,
+.btn--brochure:visited:hover {
+	background-color: transparent;
+	color: #232526;
+}
+.btn--play-video:link,
+.btn--play-video:visited {
+	background-color: transparent;
+	color: #000;
+	border: 2px solid #000000;
+}
+.contact--1 .contact--1-overlay {
+	background-color: #12c9e3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.9;
+	z-index: -1;
+}
+.contact--2 {
+	background-color: #fafafa;
+	padding: 2.4rem 4.8rem;
+}
+.contact--2-text {
+	font-size: 2rem;
+	line-height: 1.4;
+	color: #000;
+	margin-bottom: 1.6rem;
+}
+
+/*nav bar settings*/
